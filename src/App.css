@@ -52,7 +52,7 @@
   max-width: 100%;
   margin: auto;
   height: 4rem;
-  margin: 20px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
   border-radius: 5px;
   font-size: 3rem;
   overflow: hidden;
@@ -197,48 +197,52 @@
 }
 
 .App.theme3 {
-  background-color: #3a4764;
+  background-color: #160628;
 }
 
 .App.theme3 .calc-wrapper .title {
-  color: white;
+  color: #ffe53d;
 }
 
 .App.theme3 .calc-wrapper .theme-switch .theme {
-  color: white;
+  color: #ffe53d;
 }
 
 .App.theme3 .calc-wrapper .number {
-  background-color: #182034;
-  color: white;
+  background-color: #1d0934;
+  color: #ffe53d;
 }
 
 .App.theme3 .calc-wrapper .calc-buttons-wrapper {
-  background-color: #232c43;
+  background-color: #1d0934;
 }
 
 .App.theme3 .calc-wrapper .calc-buttons-wrapper .calc {
-  background-color: #eae3dc;
-  color: #444b5a;
+  background-color: #341c4f;
+  color: #ffe53d;
   cursor: pointer;
 }
 
 .App.theme3 .calc-wrapper .calc-buttons-wrapper .calc.del {
-  background-color: #637097;
+  background-color: #58077d;
+  -webkit-box-shadow: #bc15f4;
+          box-shadow: #bc15f4;
   color: white;
   cursor: pointer;
 }
 
 .App.theme3 .calc-wrapper .calc-buttons-wrapper .row-submit .calc.equals {
-  background-color: #d03f2f;
-  color: white;
+  background-color: #00e0d1;
+  -webkit-box-shadow: #6cf9f2;
+          box-shadow: #6cf9f2;
+  color: #1b2428;
   cursor: pointer;
 }
 
 .App.theme3 .calc-wrapper .calc-buttons-wrapper .row-submit .calc.reset {
-  background-color: #637097;
-  -webkit-box-shadow: #404e72;
-          box-shadow: #404e72;
+  background-color: #58077d;
+  -webkit-box-shadow: #bc15f4;
+          box-shadow: #bc15f4;
   color: white;
   cursor: pointer;
 }

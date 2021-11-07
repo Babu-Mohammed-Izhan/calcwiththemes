@@ -29,7 +29,7 @@
       max-width: 100%;
       margin: auto;
       height: 4rem;
-      margin: 20px 0px 30px 0px;
+      margin: 0px 0px 30px 0px;
       border-radius: 5px;
       font-size: 3rem;
       overflow: hidden;
@@ -160,41 +160,43 @@
 }
 
 .App.theme3 {
-  background-color: hsl(222, 26%, 31%);
+  background-color: hsl(268, 75%, 9%);
   .calc-wrapper {
     .title {
-      color: hsl(0, 0, 100%);
+      color: hsl(52, 100%, 62%);
     }
     .theme-switch {
       .theme {
-        color: hsl(0, 0, 100%);
+        color: hsl(52, 100%, 62%);
       }
     }
     .number {
-      background-color: hsl(224, 36%, 15%);
-      color: hsl(0, 0, 100%);
+      background-color: hsl(268, 71%, 12%);
+      color: hsl(52, 100%, 62%);
     }
     .calc-buttons-wrapper {
-      background-color: hsl(223, 31%, 20%);
+      background-color: hsl(268, 71%, 12%);
       .calc {
-        background-color: hsl(30, 25%, 89%);
-        color: hsl(221, 14%, 31%);
+        background-color: hsl(268, 47%, 21%);
+        color: hsl(52, 100%, 62%);
         cursor: pointer;
       }
       .calc.del {
-        background-color: hsl(225, 21%, 49%);
+        background-color: hsl(281, 89%, 26%);
+        box-shadow: hsl(285, 91%, 52%);
         color: hsl(0, 0, 100%);
         cursor: pointer;
       }
       .row-submit {
         .calc.equals {
-          background-color: hsl(6, 63%, 50%);
-          color: hsl(0, 0, 100%);
+          background-color: hsl(176, 100%, 44%);
+          box-shadow: hsl(177, 92%, 70%);
+          color: hsl(198, 20%, 13%);
           cursor: pointer;
         }
         .calc.reset {
-          background-color: hsl(225, 21%, 49%);
-          box-shadow: hsl(224, 28%, 35%);
+          background-color: hsl(281, 89%, 26%);
+          box-shadow: hsl(285, 91%, 52%);
           color: hsl(0, 0, 100%);
           cursor: pointer;
         }
