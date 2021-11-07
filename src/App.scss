@@ -32,7 +32,9 @@
       margin: 0px 0px 30px 0px;
       border-radius: 5px;
       font-size: 3rem;
-      overflow: hidden;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      word-wrap: break-word;
     }
     .calc-buttons-wrapper {
       min-width: 80%;
@@ -69,6 +71,72 @@
       }
     }
   }
+
+  @media (max-width: 400px) {
+    .calc-wrapper {
+      .title-button {
+        .title {
+          font-size: 20px;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 100%;
+        .theme-switch {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .theme {
+          }
+        }
+      }
+      .number {
+        padding: 10px 20px;
+        text-align: right;
+        max-width: 100%;
+        margin: auto;
+        height: 4rem;
+        margin: 0px 0px 30px 0px;
+        border-radius: 5px;
+        font-size: 3rem;
+        overflow-x: hidden;
+        word-wrap: break-word;
+      }
+      .calc-buttons-wrapper {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .calc {
+          margin: 10px 5px;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 1.5em;
+          border: none;
+        }
+        .calc.del {
+          margin: 10px 5px;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 1.2em;
+          border: none;
+        }
+      }
+      .row-submit {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .calc {
+          margin: 10px 5px;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 1em;
+          border: none;
+        }
+      }
+    }
+  }
 }
 
 .App.theme1 {
@@ -91,22 +159,25 @@
       .calc {
         background-color: hsl(30, 25%, 89%);
         color: hsl(221, 14%, 31%);
+        box-shadow: 0px 2px hsl(28, 16%, 65%);
         cursor: pointer;
       }
       .calc.del {
         background-color: hsl(225, 21%, 49%);
         color: hsl(0, 0, 100%);
+        box-shadow: 0px 2px hsl(224, 28%, 35%);
         cursor: pointer;
       }
       .row-submit {
         .calc.equals {
           background-color: hsl(6, 63%, 50%);
+          box-shadow: 0px 2px hsl(6, 70%, 34%);
           color: hsl(0, 0, 100%);
           cursor: pointer;
         }
         .calc.reset {
           background-color: hsl(225, 21%, 49%);
-          box-shadow: hsl(224, 28%, 35%);
+          box-shadow: 0px 2px hsl(224, 28%, 35%);
           color: hsl(0, 0, 100%);
           cursor: pointer;
         }
@@ -134,23 +205,25 @@
       background-color: hsl(0, 5%, 81%);
       .calc {
         background-color: hsl(45, 7%, 89%);
+        box-shadow: 0px 2px hsl(35, 11%, 61%);
         color: hsl(60, 10%, 19%);
         cursor: pointer;
       }
       .calc.del {
         background-color: hsl(185, 42%, 37%);
+        box-shadow: 0px 2px hsl(185, 58%, 25%);
         color: hsl(0, 0, 100%);
         cursor: pointer;
       }
       .row-submit {
         .calc.equals {
           background-color: hsl(25, 98%, 40%);
-          color: hsl(25, 99%, 27%);
+          box-shadow: 0px 2px hsl(25, 99%, 27%);
           cursor: pointer;
         }
         .calc.reset {
           background-color: hsl(185, 42%, 37%);
-          box-shadow: hsl(185, 58%, 25%);
+          box-shadow: 0px 2px hsl(185, 58%, 25%);
           color: hsl(0, 0, 100%);
           cursor: pointer;
         }
@@ -178,25 +251,26 @@
       background-color: hsl(268, 71%, 12%);
       .calc {
         background-color: hsl(268, 47%, 21%);
+        box-shadow: 0px 2px hsl(285, 91%, 52%);
         color: hsl(52, 100%, 62%);
         cursor: pointer;
       }
       .calc.del {
         background-color: hsl(281, 89%, 26%);
-        box-shadow: hsl(285, 91%, 52%);
+        box-shadow: 0px 2px hsl(285, 91%, 52%);
         color: hsl(0, 0, 100%);
         cursor: pointer;
       }
       .row-submit {
         .calc.equals {
           background-color: hsl(176, 100%, 44%);
-          box-shadow: hsl(177, 92%, 70%);
+          box-shadow: 0px 2px hsl(177, 92%, 70%);
           color: hsl(198, 20%, 13%);
           cursor: pointer;
         }
         .calc.reset {
           background-color: hsl(281, 89%, 26%);
-          box-shadow: hsl(285, 91%, 52%);
+          box-shadow: 0px 2px hsl(285, 91%, 52%);
           color: hsl(0, 0, 100%);
           cursor: pointer;
         }
