@@ -39,7 +39,7 @@ function App() {
             <button className="calc">/</button>
             <button className="calc">x</button>
           </div>
-          <div className="row">
+          <div className="row-submit">
             <button className="calc">RESET</button>
             <button className="calc">=</button>
           </div>

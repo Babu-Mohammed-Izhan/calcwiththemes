@@ -1,0 +1,42 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 30%;
+  margin: auto;
+  .title-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+  }
+  .number {
+    padding: 20px;
+    text-align: right;
+    min-width: 100%;
+  }
+  .calc-buttons-wrapper {
+    min-width: 100%;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .calc {
+      margin: 10px;
+      padding: 5px 20px;
+    }
+    .calc.del {
+      padding: 5px 10px;
+    }
+  }
+  .row-submit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .calc {
+      margin: 10px;
+      padding: 5px 20px;
+    }
+  }
+}

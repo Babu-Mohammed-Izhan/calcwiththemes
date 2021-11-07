@@ -1,1 +1,70 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  max-width: 30%;
+  margin: auto;
+}
+
+.App .title-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 100%;
+}
+
+.App .number {
+  padding: 20px;
+  text-align: right;
+  min-width: 100%;
+}
+
+.App .calc-buttons-wrapper {
+  min-width: 100%;
+}
+
+.App .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.App .row .calc {
+  margin: 10px;
+  padding: 5px 20px;
+}
+
+.App .row .calc.del {
+  padding: 5px 10px;
+}
+
+.App .row-submit {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.App .row-submit .calc {
+  margin: 10px;
+  padding: 5px 20px;
+}
+/*# sourceMappingURL=App.css.map */
