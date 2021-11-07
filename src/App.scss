@@ -4,46 +4,201 @@
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  width: 60%;
+  width: 100%;
   margin: auto;
-  .title-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-width: 100%;
-  }
-  .number {
-    padding: 20px;
-    text-align: right;
-    min-width: 100%;
-  }
-  .calc-buttons-wrapper {
-    min-width: 100%;
-  }
-  .row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    .calc {
-      margin: 10px 5px;
-      padding: 10px 30px;
-      border-radius: 10px;
-      font-size: 2em;
+  .calc-wrapper {
+    .title-button {
+      .title {
+        font-size: 30px;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 100%;
+      .theme-switch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .theme {
+        }
+      }
     }
-    .calc.del {
-      padding: 10px 15px;
-      border-radius: 10px;
-      font-size: 1.2em;
-      font-weight: 600;
-    }
-  }
-  .row-submit {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    .calc {
-      margin: 10px 5px;
+    .number {
       padding: 10px 20px;
+      text-align: right;
+      max-width: 100%;
+      margin: auto;
+      height: 4rem;
+      margin: 20px 0px 30px 0px;
       border-radius: 5px;
-      font-size: 1.2em;
+      font-size: 3rem;
+      overflow: hidden;
+    }
+    .calc-buttons-wrapper {
+      min-width: 80%;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      .calc {
+        margin: 10px 5px;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-size: 2em;
+        border: none;
+      }
+      .calc.del {
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-weight: 600;
+        border: none;
+      }
+    }
+    .row-submit {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .calc {
+        margin: 10px 5px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.2em;
+        border: none;
+      }
+    }
+  }
+}
+
+.App.theme1 {
+  background-color: hsl(222, 26%, 31%);
+  .calc-wrapper {
+    .title {
+      color: hsl(0, 0, 100%);
+    }
+    .theme-switch {
+      .theme {
+        color: hsl(0, 0, 100%);
+      }
+    }
+    .number {
+      background-color: hsl(224, 36%, 15%);
+      color: hsl(0, 0, 100%);
+    }
+    .calc-buttons-wrapper {
+      background-color: hsl(223, 31%, 20%);
+      .calc {
+        background-color: hsl(30, 25%, 89%);
+        color: hsl(221, 14%, 31%);
+        cursor: pointer;
+      }
+      .calc.del {
+        background-color: hsl(225, 21%, 49%);
+        color: hsl(0, 0, 100%);
+        cursor: pointer;
+      }
+      .row-submit {
+        .calc.equals {
+          background-color: hsl(6, 63%, 50%);
+          color: hsl(0, 0, 100%);
+          cursor: pointer;
+        }
+        .calc.reset {
+          background-color: hsl(225, 21%, 49%);
+          box-shadow: hsl(224, 28%, 35%);
+          color: hsl(0, 0, 100%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.App.theme2 {
+  background-color: hsl(222, 26%, 31%);
+  .calc-wrapper {
+    .title {
+      color: hsl(0, 0, 100%);
+    }
+    .theme-switch {
+      .theme {
+        color: hsl(0, 0, 100%);
+      }
+    }
+    .number {
+      background-color: hsl(224, 36%, 15%);
+      color: hsl(0, 0, 100%);
+    }
+    .calc-buttons-wrapper {
+      background-color: hsl(223, 31%, 20%);
+      .calc {
+        background-color: hsl(30, 25%, 89%);
+        color: hsl(221, 14%, 31%);
+        cursor: pointer;
+      }
+      .calc.del {
+        background-color: hsl(225, 21%, 49%);
+        color: hsl(0, 0, 100%);
+        cursor: pointer;
+      }
+      .row-submit {
+        .calc.equals {
+          background-color: hsl(6, 63%, 50%);
+          color: hsl(0, 0, 100%);
+          cursor: pointer;
+        }
+        .calc.reset {
+          background-color: hsl(225, 21%, 49%);
+          box-shadow: hsl(224, 28%, 35%);
+          color: hsl(0, 0, 100%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.App.theme3 {
+  background-color: hsl(222, 26%, 31%);
+  .calc-wrapper {
+    .title {
+      color: hsl(0, 0, 100%);
+    }
+    .theme-switch {
+      .theme {
+        color: hsl(0, 0, 100%);
+      }
+    }
+    .number {
+      background-color: hsl(224, 36%, 15%);
+      color: hsl(0, 0, 100%);
+    }
+    .calc-buttons-wrapper {
+      background-color: hsl(223, 31%, 20%);
+      .calc {
+        background-color: hsl(30, 25%, 89%);
+        color: hsl(221, 14%, 31%);
+        cursor: pointer;
+      }
+      .calc.del {
+        background-color: hsl(225, 21%, 49%);
+        color: hsl(0, 0, 100%);
+        cursor: pointer;
+      }
+      .row-submit {
+        .calc.equals {
+          background-color: hsl(6, 63%, 50%);
+          color: hsl(0, 0, 100%);
+          cursor: pointer;
+        }
+        .calc.reset {
+          background-color: hsl(225, 21%, 49%);
+          box-shadow: hsl(224, 28%, 35%);
+          color: hsl(0, 0, 100%);
+          cursor: pointer;
+        }
+      }
     }
   }
 }

@@ -13,11 +13,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  width: 60%;
+  width: 100%;
   margin: auto;
 }
 
-.App .title-button {
+.App .calc-wrapper .title-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,48 +30,216 @@
   min-width: 100%;
 }
 
-.App .number {
-  padding: 20px;
+.App .calc-wrapper .title-button .title {
+  font-size: 30px;
+}
+
+.App .calc-wrapper .title-button .theme-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .calc-wrapper .number {
+  padding: 10px 20px;
   text-align: right;
-  min-width: 100%;
+  max-width: 100%;
+  margin: auto;
+  height: 4rem;
+  margin: 20px 0px 30px 0px;
+  border-radius: 5px;
+  font-size: 3rem;
+  overflow: hidden;
 }
 
-.App .calc-buttons-wrapper {
-  min-width: 100%;
+.App .calc-wrapper .calc-buttons-wrapper {
+  min-width: 80%;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.App .row {
+.App .calc-wrapper .row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.App .row .calc {
+.App .calc-wrapper .row .calc {
   margin: 10px 5px;
   padding: 10px 30px;
   border-radius: 10px;
   font-size: 2em;
+  border: none;
 }
 
-.App .row .calc.del {
+.App .calc-wrapper .row .calc.del {
   padding: 10px 15px;
   border-radius: 10px;
   font-size: 1.2em;
   font-weight: 600;
+  border: none;
 }
 
-.App .row-submit {
+.App .calc-wrapper .row-submit {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-.App .row-submit .calc {
+.App .calc-wrapper .row-submit .calc {
   margin: 10px 5px;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1.2em;
+  border: none;
+}
+
+.App.theme1 {
+  background-color: #3a4764;
+}
+
+.App.theme1 .calc-wrapper .title {
+  color: white;
+}
+
+.App.theme1 .calc-wrapper .theme-switch .theme {
+  color: white;
+}
+
+.App.theme1 .calc-wrapper .number {
+  background-color: #182034;
+  color: white;
+}
+
+.App.theme1 .calc-wrapper .calc-buttons-wrapper {
+  background-color: #232c43;
+}
+
+.App.theme1 .calc-wrapper .calc-buttons-wrapper .calc {
+  background-color: #eae3dc;
+  color: #444b5a;
+  cursor: pointer;
+}
+
+.App.theme1 .calc-wrapper .calc-buttons-wrapper .calc.del {
+  background-color: #637097;
+  color: white;
+  cursor: pointer;
+}
+
+.App.theme1 .calc-wrapper .calc-buttons-wrapper .row-submit .calc.equals {
+  background-color: #d03f2f;
+  color: white;
+  cursor: pointer;
+}
+
+.App.theme1 .calc-wrapper .calc-buttons-wrapper .row-submit .calc.reset {
+  background-color: #637097;
+  -webkit-box-shadow: #404e72;
+          box-shadow: #404e72;
+  color: white;
+  cursor: pointer;
+}
+
+.App.theme2 {
+  background-color: #3a4764;
+}
+
+.App.theme2 .calc-wrapper .title {
+  color: white;
+}
+
+.App.theme2 .calc-wrapper .theme-switch .theme {
+  color: white;
+}
+
+.App.theme2 .calc-wrapper .number {
+  background-color: #182034;
+  color: white;
+}
+
+.App.theme2 .calc-wrapper .calc-buttons-wrapper {
+  background-color: #232c43;
+}
+
+.App.theme2 .calc-wrapper .calc-buttons-wrapper .calc {
+  background-color: #eae3dc;
+  color: #444b5a;
+  cursor: pointer;
+}
+
+.App.theme2 .calc-wrapper .calc-buttons-wrapper .calc.del {
+  background-color: #637097;
+  color: white;
+  cursor: pointer;
+}
+
+.App.theme2 .calc-wrapper .calc-buttons-wrapper .row-submit .calc.equals {
+  background-color: #d03f2f;
+  color: white;
+  cursor: pointer;
+}
+
+.App.theme2 .calc-wrapper .calc-buttons-wrapper .row-submit .calc.reset {
+  background-color: #637097;
+  -webkit-box-shadow: #404e72;
+          box-shadow: #404e72;
+  color: white;
+  cursor: pointer;
+}
+
+.App.theme3 {
+  background-color: #3a4764;
+}
+
+.App.theme3 .calc-wrapper .title {
+  color: white;
+}
+
+.App.theme3 .calc-wrapper .theme-switch .theme {
+  color: white;
+}
+
+.App.theme3 .calc-wrapper .number {
+  background-color: #182034;
+  color: white;
+}
+
+.App.theme3 .calc-wrapper .calc-buttons-wrapper {
+  background-color: #232c43;
+}
+
+.App.theme3 .calc-wrapper .calc-buttons-wrapper .calc {
+  background-color: #eae3dc;
+  color: #444b5a;
+  cursor: pointer;
+}
+
+.App.theme3 .calc-wrapper .calc-buttons-wrapper .calc.del {
+  background-color: #637097;
+  color: white;
+  cursor: pointer;
+}
+
+.App.theme3 .calc-wrapper .calc-buttons-wrapper .row-submit .calc.equals {
+  background-color: #d03f2f;
+  color: white;
+  cursor: pointer;
+}
+
+.App.theme3 .calc-wrapper .calc-buttons-wrapper .row-submit .calc.reset {
+  background-color: #637097;
+  -webkit-box-shadow: #404e72;
+          box-shadow: #404e72;
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */

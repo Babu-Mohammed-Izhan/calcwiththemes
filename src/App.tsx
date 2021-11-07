@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const [value1, setValue1] = React.useState("");
   const [value2, setValue2] = React.useState("");
+  const [theme, setTheme] = React.useState("1");
   const [operator, setOperator] = React.useState("");
 
   const addNumber = (num: string): void => {
@@ -59,12 +60,21 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <div className="calc-wrapper">
+    <div
+      className={`App ${
+        theme === "1" ? "theme1" : theme === "2" ? "theme2" : "theme3"
+      }`}
+    >
+      <div className={`calc-wrapper`}>
         <div className="title-button">
           <h4 className="title">calc</h4>
           <div className="theme-switch">
-            <p className="theme">THEME</p>
+            <div className="theme">
+              <p>THEME</p>
+              <button onClick={() => setTheme("1")}>1</button>
+              <button onClick={() => setTheme("2")}>2</button>
+              <button onClick={() => setTheme("3")}>3</button>
+            </div>
           </div>
         </div>
         <div className="number">{value1 + operator + value2}</div>
@@ -127,10 +137,10 @@ function App() {
               </button>
             </div>
             <div className="row-submit">
-              <button className="calc" onClick={() => handleReset()}>
+              <button className="calc reset" onClick={() => handleReset()}>
                 RESET
               </button>
-              <button className="calc" onClick={() => handleCalc()}>
+              <button className="calc equals" onClick={() => handleCalc()}>
                 =
               </button>
             </div>
