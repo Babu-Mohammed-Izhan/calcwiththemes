@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 30%;
+  width: 60%;
   margin: auto;
   .title-button {
     display: flex;
@@ -25,12 +25,15 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     .calc {
       margin: 10px 5px;
-      padding: 10px 25px;
-      border-radius: 5px;
+      padding: 10px 30px;
+      border-radius: 10px;
+      font-size: 2em;
     }
     .calc.del {
-      padding: 10px 20px;
-      border-radius: 5px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      font-weight: 600;
     }
   }
   .row-submit {
@@ -40,6 +43,7 @@
       margin: 10px 5px;
       padding: 10px 20px;
       border-radius: 5px;
+      font-size: 1.2em;
     }
   }
 }
