@@ -46,6 +46,22 @@
           justify-content: center;
 }
 
+.App .calc-wrapper .title-button .theme-switch .theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .calc-wrapper .title-button .theme-switch .theme p {
+  margin: 0px 10px;
+}
+
 .App .calc-wrapper .number {
   padding: 10px 20px;
   text-align: right;
@@ -104,6 +120,10 @@
   border: none;
 }
 
+.App .calc-wrapper .row-submit .calc.equals {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 400px) {
   .App .calc-wrapper .title-button {
     display: -webkit-box;
@@ -130,6 +150,20 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .App .calc-wrapper .title-button .theme-switch .theme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .App .calc-wrapper .title-button .theme-switch .theme p {
+    margin: 0px 10px;
   }
   .App .calc-wrapper .number {
     padding: 10px 20px;
