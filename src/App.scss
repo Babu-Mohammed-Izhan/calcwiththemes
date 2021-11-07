@@ -116,41 +116,41 @@
 }
 
 .App.theme2 {
-  background-color: hsl(222, 26%, 31%);
+  background-color: hsl(0, 0%, 90%);
   .calc-wrapper {
     .title {
-      color: hsl(0, 0, 100%);
+      color: hsl(60, 10%, 19%);
     }
     .theme-switch {
       .theme {
-        color: hsl(0, 0, 100%);
+        color: hsl(60, 10%, 19%);
       }
     }
     .number {
-      background-color: hsl(224, 36%, 15%);
-      color: hsl(0, 0, 100%);
+      background-color: hsl(0, 0%, 93%);
+      color: hsl(60, 10%, 19%);
     }
     .calc-buttons-wrapper {
-      background-color: hsl(223, 31%, 20%);
+      background-color: hsl(0, 5%, 81%);
       .calc {
-        background-color: hsl(30, 25%, 89%);
-        color: hsl(221, 14%, 31%);
+        background-color: hsl(45, 7%, 89%);
+        color: hsl(60, 10%, 19%);
         cursor: pointer;
       }
       .calc.del {
-        background-color: hsl(225, 21%, 49%);
+        background-color: hsl(185, 42%, 37%);
         color: hsl(0, 0, 100%);
         cursor: pointer;
       }
       .row-submit {
         .calc.equals {
-          background-color: hsl(6, 63%, 50%);
-          color: hsl(0, 0, 100%);
+          background-color: hsl(25, 98%, 40%);
+          color: hsl(25, 99%, 27%);
           cursor: pointer;
         }
         .calc.reset {
-          background-color: hsl(225, 21%, 49%);
-          box-shadow: hsl(224, 28%, 35%);
+          background-color: hsl(185, 42%, 37%);
+          box-shadow: hsl(185, 58%, 25%);
           color: hsl(0, 0, 100%);
           cursor: pointer;
         }
